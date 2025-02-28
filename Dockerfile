@@ -11,11 +11,18 @@ COPY requirements.txt /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of your application's code from your working directory into the container at /app
-COPY generado.py /app
+COPY app.py /app
+COPY train.py /app
 COPY datos.txt /app
+
+# Train the model
+RUN python train.py
 
 # Define environment variable
 ENV PYTHONPATH=/app
 
-# Run generado.py when the container launches
-CMD ["python", "generado.py"]
+# Expose port 5000 to the outside world
+EXPOSE 5000
+
+# Run app.py using gunicorn when the container launches
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000"]
