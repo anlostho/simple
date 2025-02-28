@@ -1,0 +1,7 @@
+Fecha de prueba,Composición de la mezcla,Proporción de mezcla,Resistencia (MPa),Temperatura (°C),Edad (días)
+2024-01-01,Cemento: 300- Arena: 600- Grava: 900,0.5,25,20,28
+2024-01-01,Cemento: 250- Arena: 650- Grava: 950,0.4,22,18,28
+2024-01-02,Cemento: 320- Arena: 600- Grava: 880,0.55,30,22,28
+2024-01-02,Cemento: 280- Arena: 630- Grava: 900,0.45,26,21,28
+2024-01-03,Cemento: 310- Arena: 620- Grava: 910,0.5,28,23,28
+2024-01-03,Cemento: 300- Arena: 610- Grava: 920,0.52,27,19,28
